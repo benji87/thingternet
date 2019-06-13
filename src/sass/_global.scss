@@ -1,0 +1,30 @@
+html, body {
+  font-size: 10px;
+}
+
+body {
+  color: $primary-grey;
+  font-family: "HK Grotesk", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1.6rem;
+}
+
+a {
+  color: $primary-grey;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.img-responsive {
+  max-width: 100%;
+}
+
+.mobile-hidden {
+  display: none;
+
+  @media screen and (min-width: $breakpoint-medium) {
+    display: block;
+  }
+}

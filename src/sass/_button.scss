@@ -1,0 +1,23 @@
+.btn {
+  background-color: $content-background;
+  border: 2px solid $mid-grey;
+  border-radius: 4rem;
+  color: $primary-grey;
+  font-size: 2.1rem;
+  overflow: hidden;
+  padding: $spacing-small/1.5 $spacing-medium;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  &--primary {
+    background-color: $primary-color;
+    border: 0;
+    color: #FFFFFF;
+  }
+
+  &--block {
+    display: block;
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,14 @@
+.hero {
+  margin: $spacing-large 0;
+
+  &__title {
+    font-size: 4.1rem;
+  }
+
+  &__btn {
+    margin-bottom: $spacing-small;
+    @media screen and (min-width: $breakpoint-medium) {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.container {
+  padding: 0 $spacing-medium;
+  width: auto;
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+  .container {
+    max-width: 1176px;
+  }
+}
+
+//Creates helper classes for spacing.
+// Examples: margin-X, margin-X__large, margin-X__small, padding-X, padding-X__large, padding-X__small
+$spacing: margin, padding;
+$position: top, right, bottom, left;
+$s: m, p;
+$p: t, r, b, l;
+
+@for $h from 1 through length($spacing) {
+
+  @for $i from 1 through length($position) {
+    .#{nth($s, $h)}-#{nth($p, $i)} {
+      #{nth($spacing, $h)}-#{nth($position, $i)}: $spacing-medium;
+
+      &-none {
+        #{nth($spacing, $h)}-#{nth($position, $i)}: 0 !important;
+      }
+
+      &-small {
+        #{nth($spacing, $h)}-#{nth($position, $i)}: $spacing-small;
+      }
+
+      &-large {
+        #{nth($spacing, $h)}-#{nth($position, $i)}: $spacing-large;
+      }
+
+    }
+  }
+}
+

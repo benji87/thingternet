@@ -1,0 +1,137 @@
+.nav {
+
+  background-color: $light-grey;
+  display: none;
+  height: 100vh;
+  width: 68.8%;
+  position: absolute;
+  right: -68.8%;
+  top: 0;
+
+  @media screen and (min-width: $breakpoint-medium) {
+    display: block;
+    height: auto;
+    width: 100%;
+    position: relative;
+    right: auto;
+    top: auto;
+  }
+
+  &--show {
+    display: block;
+    right: 0rem;
+    z-index: 1001;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  &__item {
+    display: block;
+    font-size: 1.8rem;
+
+    @media screen and (min-width: $breakpoint-medium) {
+      display: inline-block;
+    }
+
+    &__link {
+      border-top: .2rem solid transparent;
+      color: $primary-grey;
+      display: block;
+      text-decoration: none;
+      padding: $spacing-small;
+
+      &:hover,
+      &--current {
+        background-color: $content-background;
+        border-color: $primary-color;
+        color: $primary-color;
+        position: relative;
+        z-index: 102;
+      }
+
+      &--no-hover {
+        &:hover {
+          background-color: transparent;
+          border: 0;
+        }
+      }
+    }
+
+    &:first-child {
+      color: $primary-grey;
+      font-weight: 800;
+      padding: $spacing-small;
+    }
+
+
+  }
+}
+
+.sub-nav {
+  background-color: $content-background;
+  border: 1px solid #DADADA;
+  box-shadow: 0 3px 4px 0 rgba(96,96,96,0.50);
+  display: none;
+  font-size: 1.8rem;
+  margin-top: -1px;
+  padding: 0;
+  position: absolute;
+    left: 0;
+  width: 100%;
+  z-index: 101;
+
+  @media screen and (min-width: $breakpoint-medium) {
+    padding: $spacing-medium $spacing-small;
+    width: 100%;
+  }
+
+  &__section {
+    padding: 0 $spacing-small;
+  }
+
+  &__heading {
+    margin: 0 0 $spacing-medium;
+  }
+}
+
+.vertical-nav {
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+
+    margin-bottom: $spacing-small;
+
+    &__link {
+      color: $primary-grey;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &--highlight {
+        color: $primary-color;
+        margin-top: $spacing-medium;
+      }
+
+    }
+
+  }
+}
+
+.mobile-nav {
+  position: relative;
+  z-index: 1002;
+  @media screen and (min-width: $breakpoint-medium) {
+    display: none;
+  }
+}

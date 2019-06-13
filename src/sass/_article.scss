@@ -1,0 +1,25 @@
+.article {
+
+  &-snippet {
+
+    &__heading {
+      margin: $spacing-small 0 $spacing-small/2;
+
+      &--large {
+        font-size: $font-size-medium;
+      }
+
+    }
+
+    &__intro {
+      font-size: 1.4rem;
+
+      &--regular {
+        font-size: 1.6rem;
+      }
+
+    }
+
+  }
+
+}

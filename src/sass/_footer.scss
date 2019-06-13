@@ -1,0 +1,13 @@
+.footer {
+  background-color: $primary-grey;
+  color: #FFFFFF;
+  padding: $spacing-medium 0;
+
+  &__wrapper {
+    flex-direction: column;
+  }
+
+  p {
+    margin: 0;
+  }
+}

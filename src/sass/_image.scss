@@ -1,0 +1,13 @@
+.img-container {
+  position: relative;
+
+  &__title {
+    background-color: $content-background;
+    border-radius: $border-radius;
+    font-size: $font-size-regular;
+    padding: $spacing-small/2 $spacing-small;
+    position: absolute;
+      right: $spacing-medium;
+      bottom: $spacing-medium;
+  }
+}

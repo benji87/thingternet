@@ -1,4 +1,4 @@
-$('.nav--show:not .nav__item__link').on('mouseenter', function() {
+$('.nav__item__link').on('mouseenter', function() {
    var selectedItem = $(this);
    $(selectedItem).addClass('nav__item__link--current');
    $(selectedItem).parent().find('.sub-nav').show();
